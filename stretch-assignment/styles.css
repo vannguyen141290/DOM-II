@@ -34,3 +34,7 @@ body {
 .block--gray {
   background-color: gray;
 }
+
+.large {
+  transform: scale(1.3);
+}
