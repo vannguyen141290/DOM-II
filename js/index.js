@@ -39,25 +39,22 @@ window.addEventListener('resize', () => {
 
 
 
-// 5-scroll
-// window.addEventListener('scroll', (event)=>{
-//     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-//     const scrolled = window.scrollY;
-//     // console.log(scrollable);
-//     // console.log(scrolled);
-//     if (scrollable === Math.ceil(scrolled)){
-//         alert('You have reached the bottom of the page!')
-//     }
-// });
+5-scroll
+window.addEventListener('scroll', (event)=>{
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const scrolled = window.scrollY;
+    // console.log(scrollable);
+    // console.log(scrolled);
+    if (scrollable === Math.ceil(scrolled)){
+        alert('You have reached the bottom of the page!')
+    }
+});
 
 
 // styling
 const contentPick = document.querySelector('.content-pick');
 contentPick.style.display = 'flex';
-contentPick.style.flexWrap = 'nowrap';
-contentPick.style.width = "30%";
-contentPick.style.margin = '0 2% 5% 2%';
-
+contentPick.style.width = '60%';
 
 // click
 const button = document.querySelectorAll('.btn');
@@ -81,7 +78,7 @@ window.addEventListener('load', (event) => {
 });
 
 //focus + blur
-const promoCode = document.querySelector('input[type='text']');
+const promoCode = document.querySelector('input[type="text"]');
 promoCode.addEventListener('focus', (event)=>{
     event.target.style.background = 'lightpink';
 });
