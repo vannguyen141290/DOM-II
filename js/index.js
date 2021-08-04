@@ -43,8 +43,6 @@ window.addEventListener('resize', () => {
 window.addEventListener('scroll', (event)=>{
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const scrolled = window.scrollY;
-    // console.log(scrollable);
-    // console.log(scrolled);
     if (scrollable === Math.ceil(scrolled)){
         alert('You have reached the bottom of the page!')
     }
